@@ -9,6 +9,7 @@ Q: Write a program that uses a for loop to find the largest number in a given ar
 
 //Q1:::
 
+
 //Declare variable
 let counter = 1;
 
@@ -44,3 +45,30 @@ while (counter < 101) {
 
 //Q2
 
+function sumOfEvens(){
+    let sum = 0;
+    for(let i = 1; i <= 100; i++){
+        if(i % 2 == 0){
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+console.log("Sum of all even numbers between 1 and 100: " + sumOfEvens());
+
+
+//Q3
+
+function findLargest(arr){
+    let largest = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > largest){
+            largest = arr[i];
+        }
+        return largest;
+    }
+}
+
+console.log("The Largest number in an Array: " + findLargest([2, 250, 50, 640, 200]));
