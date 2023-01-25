@@ -8,9 +8,15 @@ countTrue([]) ➞ 0
 Return 0 if given an empty array.
 All array items are of the type bool (true or false). */
 
-const numbers = [true, false, false, true, false];
-const over18 = numbers.filter(myFunction);
+function countTrue(arr){
+  let counter = 0;
 
-function myFunction(value) {
-  console.log(value.length);
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i] == true){
+      counter ++;
+    }
+  }
+  return counter;
 }
+
+console.log(countTrue([true, false, false, true, false]));
