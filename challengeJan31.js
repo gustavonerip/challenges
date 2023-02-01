@@ -7,7 +7,7 @@ console.log(factorial(5)) // 120
 console.log(factorial(6)) // 720
 */
 
-/* function factorialOfNumber(number){
+function factorialOfNumber(number){
     if(number === 0 number ){
         return 1;
     }
@@ -20,27 +20,27 @@ console.log(factorial(6)) // 720
 console.log(factorialOfNumber(5));
 console.log(factorialOfNumber(6));
 
- */
 
-//Corrected
 
-function resultFactorial(number){
-    if(number === 0 || number === 1) return 1;
+// //Corrected
 
-    return number * resultFactorial(number-1);  
-}
+// function resultFactorial(number){
+//     if(number === 0 || number === 1) return 1;
 
-function factorialNoRecursion(number){
-    let sum = 1;
-    while(number >= 1){
-        sum *= number;
-        number--;
-    }
-    return sum;
-}
+//     return number * resultFactorial(number-1);  
+// }
 
-console.log(resultFactorial(5));
-console.log(resultFactorial(6));
+// function factorialNoRecursion(number){
+//     let sum = 1;
+//     while(number >= 1){
+//         sum *= number;
+//         number--;
+//     }
+//     return sum;
+// }
 
-console.log(factorialNoRecursion(5));
-console.log(factorialNoRecursion(6));
+// console.log(resultFactorial(5));
+// console.log(resultFactorial(6));
+
+// console.log(factorialNoRecursion(5));
+// console.log(factorialNoRecursion(6));
